@@ -1,0 +1,192 @@
+@media only screen and (min-width: 1000px) { /* FOR PC ONLY */
+
+    .contact{
+      margin:auto;
+      width: 100%;
+      height: 700px;
+      margin-top: 80px;
+      background-color: #26282D;
+    }
+
+    .message{
+      text-align: center;
+      font-size: 20px;
+      color: green;
+    }
+
+    .clear{
+      clear: left;
+    }
+
+    .contact-form .submit-btn{
+      align-content: center;
+      padding: 10px;
+      font-size: 20px;
+      color: white;
+      background: none;
+      border: none;
+      margin-left: 43%;
+    }
+
+    .contact-form .submit-btn:hover{
+      cursor: pointer;
+    }
+
+    .contact-form{
+      margin: auto;
+      width: 80%;
+      margin-top:0px;
+    }
+
+    .full-tb{
+      width: 100%;
+    }
+
+    .contact-fields input[type=text],input[type=email]{
+      border: none;
+      border-bottom: 2px solid white;
+      background-color: #26282D;
+      font-size: 20px;
+      margin-top: 20px;
+      color: white;
+      padding-bottom: 20px;
+      font-weight: lighter;
+    }
+
+    .contact-fields input::placeholder,textarea::placeholder{
+      color: white;
+      font-weight: lighter;
+    }
+
+    .contact-fields textarea{
+      color: white;
+      background: #26282D;
+      font-size: 20px;
+      width: 100%;
+      resize: none;
+      border: none;
+      border-bottom: 2px solid white;
+      font-family: 'helvetica';
+    }
+
+    .contact-fields{
+      padding-top: 100px;
+      /* background-color: red; */
+      width: 50%;
+      height: 700px;
+      float: left;
+    }
+
+
+    .contact-heading-block{
+      width: 50%;
+      height: 700px;
+      /* background-color: green; */
+      float: left;
+    }
+
+    .contact-heading{
+      font-size: 60px;
+      color: #dbc8be;
+      text-align: center;
+      vertical-align: center;
+    }
+
+    .contact-form input:focus,textarea:focus{
+      outline: none;
+    }
+
+    .half-tb{
+      /* display: inline-block; */
+      clear: both;
+      width: 45%;
+    }
+
+    .email{
+      margin-left: 8%;
+    }
+
+  }
+
+@media only screen and (max-width: 1000px) { /* FOR MOBILE POTRAIT ONLY*/
+
+  .contact{
+    /* display: none; */
+    margin-top: 500px;
+    background-color: #26282D;
+    height: 1400px;
+  }
+
+  .contact-heading-block{
+    margin: auto;
+    width: 60%;
+    padding-top: 50px;
+  }
+
+  .contact-heading{
+    font-size: 100px;
+    text-align: center;
+    color: #DBC8BE;
+  }
+
+  .contact-form{
+    margin: auto;
+    width: 95%;
+  }
+
+  .contact-form input[type=text],input[type=email]{
+    font-size: 40px;
+    color: white;
+    background-color: #26282D;
+    border: none;
+    border-bottom: 2px solid white;
+    margin-top: 40px;
+    padding-bottom: 40px;
+    clear:both;
+  }
+
+  .full-tb{
+    display: block;
+    width: 100%;
+  }
+
+  .email{
+    margin-left: 8.5%;
+  }
+
+  .half-tb{
+    width: 45%;
+    display: inline-block;
+  }
+
+  .contact-form input:focus,textarea:focus{
+    outline: none;
+  }
+
+  .contact-form textarea{
+    resize: none;
+    font-size: 40px;
+    color: white;
+    background-color: #26282D;
+    border: none;
+    border-bottom: 2px solid white;
+    font-family: helvetica;
+  }
+
+  .contact-form .submit-btn{
+    padding: 20px;
+    font-size: 40px;
+    color: white;
+    border: none;
+    background-color: #26282D;
+    text-align: center;
+    margin-left: 40%;
+  }
+
+  .message{
+    color: green;
+    text-align: center;
+    font-size: 40px;
+  }
+
+}

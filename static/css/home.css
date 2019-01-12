@@ -1,0 +1,94 @@
+
+@media only screen and (min-width: 1000px) { /* FOR PC ONLY */
+
+    .half-tb{
+      margin: auto;
+      width: 100%;
+    }
+
+    .intro{
+      margin:auto;
+      height: 800px;
+      width:100%;
+      background-color: #26282D;
+    }
+
+    .intro-img{
+      margin-top: 50px;
+      width: 50%;
+      height: 750px;
+      background-attachment: fixed;
+    }
+
+    .intro-heading{
+      padding-top: 200px;
+      width: 400px;
+      font-size: 75px;
+      margin-left: 150px;
+      text-align: center;
+      color: #dbc8be;
+    }
+
+    .intro-sub-heading{
+      width: 500px;
+      font-size: 30px;
+      margin-left: 110px;
+      text-align: center;
+      color: white;
+    }
+
+    .intro-context{
+      padding-top: 30px;
+      width: 500px;
+      font-size: 20px;
+      margin-left: 110px;
+      text-align: center;
+      color: white;
+      line-height: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) { /* FOR MOBILE POTRAIT ONLY*/
+
+
+
+  .intro-img{
+    /* display: none; */
+    height: 1000px;
+    filter: brightness(50%);
+    background-attachment: fixed;
+  }
+
+  .intro-heading{
+    /* display: none; */
+    font-size: 100px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 500px;
+    color: white;
+  }
+
+  .intro-sub-heading{
+    /* display: none; */
+    font-size: 70px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    color: white;
+    top: 60px;
+  }
+
+  .intro-context{
+    /* display: none; */
+    font-size: 60px;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    /* margin-left: 5%; */
+    position: relative;
+    top: 100px;
+    color: white;
+  }
+}

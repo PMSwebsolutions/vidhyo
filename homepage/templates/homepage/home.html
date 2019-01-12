@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content_block %}
+
+<div class="intro" style="">
+  <img align="right" class="intro-img" src="{% static "images/intro1.jpg" %}" alt="computer"/>
+  <p class="intro-heading">Vidhyo Welcomes You</p>
+  <p class="intro-sub-heading">Your Needs + Our Touch</p>
+  <p class="intro-context">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+</div>
+
+<div class="contact" id="contact-scroll">
+  <div class="contact-heading-block">
+    <p class="contact-heading">Contact Us</p>
+  </div>
+  <div class="contact-fields">
+    <form class="contact-form" id="contact-form-action" method="post">
+      {% csrf_token %}
+      <input class="half-tb" type="text" name="name" id="c-name" placeholder="Name" required >
+      <input class="half-tb email" type="email" name="email" id="c-email" placeholder="Email" required>
+      <!-- <br> -->
+      <input class="full-tb" type="text" name="subject" id="c-subject"  placeholder="Subject" required>
+      <!-- <br> -->
+      <input class="full-tb" type="text" name="phone" id="c-phone" placeholder="Phone" required>
+      <!-- <br> -->
+      <input class="full-tb" type="text" name="address" id="c-address" placeholder="Address"  required>
+      <br><br>
+      <textarea class="full-tb" rows="5" cols="5" name="c-message" id="c-message" placeholder="Message" style="resize:none;" required></textarea>
+      <!-- <br> -->
+      <button class="submit-btn" type="button" id="c-submit" name="button">Submit</button>
+      <br>
+      <img class="ajaxProgress" src="{% static 'images/ajax-loader.gif' %}" alt="" style="margin-left:40%;display:none;">
+      <img class="ajaxProgressMob" src="{% static 'images/ajax-loader-mob.gif' %}" alt="" style="margin-left:45%;height:80px;display:none">
+      <p class="message"></p>
+    </form>
+  </div>
+  <div class="clear">
+
+  </div>
+
+</div>
+
+{% endblock %}
