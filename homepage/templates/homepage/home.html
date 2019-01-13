@@ -28,17 +28,32 @@
       <br><br>
       <textarea class="full-tb" rows="5" cols="5" name="c-message" id="c-message" placeholder="Message" style="resize:none;" required></textarea>
       <!-- <br> -->
-      <button class="submit-btn" type="button" id="c-submit" name="button">Submit</button>
+      <!-- <input type="submit" name="c-button" class="submit-btn" id="c-submit" value="Submit"> -->
+      <button class="submit-btn" type="button" id="c-submit" name="c-button">Submit</button>
       <br>
       <img class="ajaxProgress" src="{% static 'images/ajax-loader.gif' %}" alt="" style="margin-left:40%;display:none;">
       <img class="ajaxProgressMob" src="{% static 'images/ajax-loader-mob.gif' %}" alt="" style="margin-left:45%;height:80px;display:none">
       <p class="message"></p>
     </form>
   </div>
-  <div class="clear">
-
-  </div>
-
+  <div class="clear" style="height:0px;"></div>
+</div>
+<div class="footer-img-block" style="width:100%;height:500px;overflow:hidden">
+  <img src="{% static "images/footer-img.jpg" %}" alt="" style="">
+</div>
+<div class="subscribe" id="subscribe-scroll">
+  <!-- <span class="subscribe-heading">Subscribe</span> -->
+  <!-- <h6 class="subscribe-heading">Subscribe</h6> -->
+  <form class="subscribe-form" method="post">
+    {% csrf_token %}
+    <p class="subscribe-heading">Subscribe</p>
+    <input type="email" class="s-email" id="s-emailing" name="subs-email" value="" placeholder="Email">
+    <br><br>
+    <button type="button" class="subscribe-btn" id="s-submit" name="s-button">Sign Up</button>
+    <img class="SajaxProgress" src="{% static 'images/ajax-loader.gif' %}" alt="" style="margin-left:40%;display:none;">
+    <img class="SajaxProgressMob" src="{% static 'images/ajax-loader-mob.gif' %}" alt="" style="margin-left:45%;height:80px;display:none">
+    <p class="subscribe-message" style="text-align:center"></p>
+  </form>
 </div>
 
 {% endblock %}

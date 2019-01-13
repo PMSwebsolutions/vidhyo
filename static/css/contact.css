@@ -11,7 +11,7 @@
     .message{
       text-align: center;
       font-size: 20px;
-      color: green;
+      color: #adfc03;
     }
 
     .clear{
@@ -42,7 +42,7 @@
       width: 100%;
     }
 
-    .contact-fields input[type=text],input[type=email]{
+    .contact-fields input[type=text],.contact-fields input[type=email]{
       border: none;
       border-bottom: 2px solid white;
       background-color: #26282D;
