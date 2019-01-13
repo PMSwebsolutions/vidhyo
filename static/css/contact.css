@@ -134,7 +134,7 @@
     width: 95%;
   }
 
-  .contact-form input[type=text],input[type=email]{
+  .contact-form input[type=text],.contact-form input[type=email]{
     font-size: 40px;
     color: white;
     background-color: #26282D;

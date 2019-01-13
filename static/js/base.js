@@ -12,6 +12,32 @@ $(document).ready(function() {
   });
 
 
+
+  //======================= FLEX ==============================================================//
+
+  $('.flex-right').click(function(){
+              if($('.skills-top').is(':visible')){
+                  $('.skills-top').toggle();
+                  $('.skills-bottom').toggle();
+                  $(".flex-right").attr("disabled", "disabled");
+                  $('.flex-left').removeAttr("disabled");
+              }
+          });
+
+          $('.flex-left').click(function(){
+              if($('.skills-bottom').is(':visible')){
+                  $('.skills-top').toggle();
+                  $('.skills-bottom').toggle();
+                  $(".flex-left").attr("disabled", "disabled");
+                  $('.flex-right').removeAttr("disabled");
+              }
+          });
+
+
+
+
+
+
 //======================= SCROLL ==============================================================//
 
 // Add smooth scrolling to all links
@@ -140,10 +166,17 @@ $(".s-email").keyup(function(){
 
   //======================= Subscribe SUBMIT FUNCTION ==============================================================//
 
+  $(document).keypress(
+  function(event){
+    if (event.which == '13') {
+      event.preventDefault();
+    }
+});
+
     $('#s-submit').click(function(e){
 
       if($('.s-email').val() == ''){
-        $(".subscribe-message").text("Enter your email.").css({'color':'red','font-size':'20px'});
+        $(".subscribe-message").text("Enter your email.").css({'color':'red',});
       }else{
         // $(this).submit();
         var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -153,7 +186,10 @@ $(".s-email").keyup(function(){
             $("#s-submit").attr("disabled", "disabled");
           }else{
             $("#s-submit").attr("disabled", "disabled");
-            $('.ajaxProgressMob').show();
+            $('.SajaxProgressMob').show();
+          }
+          if (window.event && window.event.keyCode == 13){
+            $('.subscribe-form').submit();
           }
           $(this).css("cursor","wait");
           e.preventDefault();
@@ -165,7 +201,7 @@ $(".s-email").keyup(function(){
               csrfmiddlewaretoken:  $('input[name=csrfmiddlewaretoken]').val(),
             },
             success:function(){
-              $('.subscribe-message').text('Congrats! You are a subscriber now.').css({"color":"#adfc03","font-size":"20px"});
+              $('.subscribe-message').text('Congrats! You are a subscriber now.').css({"color":"#adfc03",});
               $('.s-email').val('');
               $('.SajaxProgress').css('display','none');
               $('.SajaxProgressMob').css('display','none');
@@ -174,7 +210,7 @@ $(".s-email").keyup(function(){
             },
 
             error:function(){
-                $('.subscribe-message').text('The email aleardy exists.').css({"color":"red","font-size":"20px"});
+                $('.subscribe-message').text('The email aleardy exists.').css({"color":"red"});
                 $('.SajaxProgress').css('display','none');
                 $('.SajaxProgressMob').css('display','none');
                 $('.s-email').val('');
@@ -184,7 +220,7 @@ $(".s-email").keyup(function(){
 
           });
         }else{
-          $('.subscribe-message').text('Enter a proper email').css({"color":"red","font-size":"20px"});
+          $('.subscribe-message').text('Enter a proper email').css({"color":"red"});
         }
 
       }

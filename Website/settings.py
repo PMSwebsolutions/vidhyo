@@ -19,8 +19,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'vidhyo.io@gmail.com'
-EMAIL_HOST_PASSWORD = 'Vidhyo@1212'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
@@ -32,7 +32,7 @@ SECRET_KEY = '(a86!xvjek@6s1c7urxql&(e25+$si2(8sma65p&@ud88$r+_u'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '192.168.0.100',
+
 ]
 
 

@@ -14,6 +14,8 @@ class home(TemplateView):
             subject = request.POST.get('subject')
             phone = request.POST.get('phone')
             message = request.POST.get('message')
+            if(name == ""):
+                email = ""
             email_message = "Name : "+ name + "\nEmail: "+email+"\nPhone: "+phone+"\nMessage: \n"+message
             send_mail(
             'customer contact',

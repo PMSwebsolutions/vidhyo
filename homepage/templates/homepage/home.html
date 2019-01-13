@@ -10,6 +10,60 @@
   <p class="intro-context">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 </div>
 
+<div class="flexbox" id="skills-scroll">
+<h1 align="center">Skills</h1>
+<p class="flex-sub-header">The technologies we offer you</p>
+<div class="flex-container skills-top" >
+            <div class="flex-inner-button ">
+                <button class="flex-left">&#10094;</button>
+            </div>
+            <div class="flex-inner-div">
+                <img src="{% static "images/html.jpg" %}" alt="html">
+                <h3 align="center">HTML</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="flex-inner-div">
+                <img src="{% static "images/css.jpg" %}" alt="html">
+                <h3 align="center">CSS</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="flex-inner-div">
+                <img src="{% static "images/js.jpg" %}" alt="javascript">
+                <h3 align="center">JavaScript</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="flex-inner-button">
+                <button class="flex-right">&#10095;</button>
+            </div>
+
+        </div>
+
+        <div class="flex-container skills-bottom" style="display: none;">
+            <div class="flex-inner-button ">
+                <button class="flex-left">&#10094;</button>
+            </div>
+            <div class="flex-inner-div" style="">
+                <img src="{% static "images/js.jpg" %}" alt="javascript">
+                <h3 align="center">JavaScript</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="flex-inner-div">
+                <img src="{% static "images/jq.png" %}" alt="jquery">
+                <h3 align="center">jQuery</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="flex-inner-div">
+                <img src="{% static "images/django.jpg" %}" alt="jquery">
+                <h3 align="center">Django</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="flex-inner-button">
+                <button class="flex-right">&#10095;</button>
+            </div>
+        </div>
+</div>
+
+
 <div class="contact" id="contact-scroll">
   <div class="contact-heading-block">
     <p class="contact-heading">Contact Us</p>
@@ -38,12 +92,14 @@
   </div>
   <div class="clear" style="height:0px;"></div>
 </div>
-<div class="footer-img-block" style="width:100%;height:500px;overflow:hidden">
+
+
+
+<div class="footer-img-block" style="">
   <img src="{% static "images/footer-img.jpg" %}" alt="" style="">
 </div>
+
 <div class="subscribe" id="subscribe-scroll">
-  <!-- <span class="subscribe-heading">Subscribe</span> -->
-  <!-- <h6 class="subscribe-heading">Subscribe</h6> -->
   <form class="subscribe-form" method="post">
     {% csrf_token %}
     <p class="subscribe-heading">Subscribe</p>
