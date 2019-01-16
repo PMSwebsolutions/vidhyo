@@ -10,27 +10,27 @@
   <p class="intro-context">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 </div>
 
-<div class="flexbox" id="skills-scroll">
+<div class="flexbox pc" id="skills-scroll">
 <h1 align="center">Skills</h1>
 <p class="flex-sub-header">The technologies we offer you</p>
 <div class="flex-container skills-top" >
             <div class="flex-inner-button ">
-                <button class="flex-left">&#10094;</button>
+                <button class="flex-left-m">&#10094;</button>
             </div>
             <div class="flex-inner-div">
                 <img src="{% static "images/html.jpg" %}" alt="html">
                 <h3 align="center">HTML</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications.HTML elements are the building blocks of HTML pages. </p>
             </div>
             <div class="flex-inner-div">
                 <img src="{% static "images/css.jpg" %}" alt="html">
                 <h3 align="center">CSS</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML. CSS is a cornerstone technology of the World Wide Web</p>
             </div>
             <div class="flex-inner-div">
                 <img src="{% static "images/js.jpg" %}" alt="javascript">
                 <h3 align="center">JavaScript</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>JavaScript (JS) is a lightweight, interpreted or JIT compiled programming language with first-class functions. Most well-known as the scripting language for Web pages.</p>
             </div>
             <div class="flex-inner-button">
                 <button class="flex-right">&#10095;</button>
@@ -45,23 +45,72 @@
             <div class="flex-inner-div" style="">
                 <img src="{% static "images/js.jpg" %}" alt="javascript">
                 <h3 align="center">JavaScript</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>JavaScript (JS) is a lightweight, interpreted or JIT compiled programming language with first-class functions. Most well-known as the scripting language for Web pages.</p>
             </div>
             <div class="flex-inner-div">
                 <img src="{% static "images/jq.png" %}" alt="jquery">
                 <h3 align="center">jQuery</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax. It is free, open-source software using the permissive MIT License. Web analysis indicates that it is the most widely deployed JavaScript library by a large margin.</p>
             </div>
             <div class="flex-inner-div">
                 <img src="{% static "images/django.jpg" %}" alt="jquery">
                 <h3 align="center">Django</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Django is a Python-based free and open-source web framework, which follows the model-view-template architectural pattern. It is maintained by the Django Software Foundation.</p>
             </div>
             <div class="flex-inner-button">
-                <button class="flex-right">&#10095;</button>
+                <button class="flex-right-m">&#10095;</button>
             </div>
         </div>
 </div>
+
+
+<div class="flex" id="skill-scroll">
+  <div class="flexbox mobile" >
+<h1 align="center">Skills</h1>
+<p class="flex-sub-header">The technologies we offer you</p>
+<div class="flex-container" >
+    <div class="flex-inner-button ">
+        <button class="flex-left-m">&#10094;</button>
+    </div>
+    <div class="flex-inner-div flex-inner-div-m" >
+        <img src="{% static "images/html.jpg" %}" alt="html">
+        <h3 align="center">HTML</h3>
+        <p>Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications.HTML elements are the building blocks of HTML pages. </p>
+    </div>
+    <div class="flex-inner-div flex-inner-div-m" style="display: none">
+        <img src="{% static "images/css.jpg" %}" alt="css">
+        <h3 align="center">CSS</h3>
+        <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML. CSS is a cornerstone technology of the World Wide Web</p>
+    </div>
+    <div class="flex-inner-div flex-inner-div-m" style="display: none">
+        <img src="{% static "images/js.jpg" %}" alt="javascript">
+        <h3 align="center">JavaScript</h3>
+        <p>JavaScript (JS) is a lightweight, interpreted or JIT compiled programming language with first-class functions. Most well-known as the scripting language for Web pages</p>
+    </div>
+    <div class="flex-inner-div flex-inner-div-m" style="display: none">
+        <img src="{% static "images/jq.png" %}" alt="jquery">
+        <h3 align="center">jQuery</h3>
+        <p>jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax. It is free, open-source software using the permissive MIT License. Web analysis indicates that it is the most widely deployed JavaScript library by a large margin.</p>
+
+    </div>
+    <div class="flex-inner-div flex-inner-div-m" style="display: none">
+        <img src="{% static "images/django.jpg" %}" alt="jquery">
+        <h3 align="center">Django</h3>
+        <p>Django is a Python-based free and open-source web framework, which follows the model-view-template architectural pattern. It is maintained by the Django Software Foundation.</p>
+    </div>
+    <div class="flex-inner-button">
+        <button class="flex-right-m">&#10095;</button>
+    </div>
+
+</div>
+</div>
+
+</div>
+
+
+
+
+
 
 
 <div class="contact" id="contact-scroll">

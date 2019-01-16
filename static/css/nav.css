@@ -58,11 +58,11 @@ body{
   .nav-list li{
     padding: 3vh;
     float: left;
-    font-size: 3vh;
+    font-size: 2vw;
   }
 
   .nav-header{
-    font-size: 6vh;
+    font-size: 3vw;
   }
 
   .nav-height{

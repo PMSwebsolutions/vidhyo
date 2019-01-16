@@ -13,7 +13,7 @@ $(document).ready(function() {
 
 
 
-  //======================= FLEX ==============================================================//
+  //======================= FLEX-PC ==============================================================//
 
   $('.flex-right').click(function(){
               if($('.skills-top').is(':visible')){
@@ -32,6 +32,29 @@ $(document).ready(function() {
                   $('.flex-right').removeAttr("disabled");
               }
           });
+
+
+//======================= FLEX-MOB ==============================================================//
+
+          var flex_count = 0
+          var div = $('.flex-inner-div-m');
+          var r_len_m = div.length - 1;
+                $('.flex-right-m').click(function(){
+                   if (flex_count < r_len_m){
+                       div.eq(flex_count).css('display','none');
+                       div.eq(flex_count+1).css('display','block');
+                       flex_count = flex_count + 1;
+                   }
+                });
+
+                $('.flex-left-m').click(function(){
+                   if (flex_count > 0){
+                       div.eq(flex_count).css('display','none');
+                       div.eq(flex_count-1).css('display','block');
+                       flex_count = flex_count - 1;
+                   }
+                });
+
 
 
 
@@ -210,7 +233,7 @@ $(".s-email").keyup(function(){
             },
 
             error:function(){
-                $('.subscribe-message').text('The email aleardy exists.').css({"color":"red"});
+                $('.subscribe-message').text('This email has already subscribed').css({"color":"red"});
                 $('.SajaxProgress').css('display','none');
                 $('.SajaxProgressMob').css('display','none');
                 $('.s-email').val('');
@@ -229,4 +252,14 @@ $(".s-email").keyup(function(){
 
 
 
+});
+
+
+
+$('.nav-skills').click(function(){
+  if($(window).innerWidth()<1000){
+    $('.nav-skills').attr('href','#skill-scroll');
+  }else{
+    $('.nav-skills').attr('href','#skills-scroll');
+  }
 });
